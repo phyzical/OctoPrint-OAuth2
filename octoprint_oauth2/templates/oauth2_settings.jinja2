@@ -1,0 +1,55 @@
+<form id="settings_plugin_oauth2" class="form-horizontal">
+
+    <h3>{{ _('OAuth2 Settings') }}</h3>
+
+    <ul class="nav nav-pills">
+        <li class="active"><a href="#plugin_oauth2_settings" data-toggle="tab">{{ _('Main')
+                }}</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="plugin_oauth2_settings" class="tab-pane active">
+            <div class="control-group">
+                <label for="plugin_oauth2_settings_token_path" class="control-label">{{ _('Token Path') }}</label>
+                <div class="controls">
+                    <input id="plugin_oauth2_settings_token_path" type="text" class="input-block-level"
+                        data-bind="value: settings.plugins.oauth2.token_path" placeholder="TODO">
+                    <span class="help-inline"></span>
+                </div>
+
+                <label for="plugin_oauth2_settings_user_info_path" class="control-label">{{ _('User Info Path')
+                    }}</label>
+                <div class="controls">
+                    <input id="plugin_oauth2_settings_user_info_path" type="text" class="input-block-level"
+                        data-bind="value: settings.plugins.oauth2.user_info_path" placeholder="TODO">
+                    <span class="help-inline"></span>
+                </div>
+
+
+                <label for="plugin_oauth2_settings_user_username_key" class="control-label">{{ _('Username key')
+                    }}</label>
+                <div class="controls">
+                    <input id="plugin_oauth2_settings_user_username_key" type="text" class="input-block-level"
+                        data-bind="value: settings.plugins.oauth2.user_username_key" placeholder="profile">
+                    <span class="help-inline"></span>
+                </div>
+
+                <label for="plugin_oauth2_settings_user_access_token_query_key" class="control-label">{{ _('User access
+                    token key') }}</label>
+                <div class="controls">
+                    <input id="plugin_oauth2_settings_user_access_token_query_key" type="text" class="input-block-level"
+                        data-bind="value: settings.plugins.oauth2.user_access_token_query_key" placeholder="token">
+                    <span class="help-inline"></span>
+                </div>
+
+                <label for="plugin_oauth2_settings_token_headers" class="control-label">{{ _('Token Headers') }}</label>
+                <div class="controls">
+                    <input id="plugin_oauth2_settings_token_headers" type="text" class="input-block-level"
+                        data-bind="value: settings.plugins.oauth2.token_headers"
+                        placeholder='{"Accept": "application/json"}'>
+                    <span class="help-inline"> Will be parsed as json</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
